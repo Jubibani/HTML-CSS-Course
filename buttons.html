@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+  - - todo:                 - -
+    -- current:
+      //moving them all in the center
+      //making a button direct you in another page
+      //minimilizing redundant spaces
+  - - !!must be done today!!- -
+-->
+<html >
+  <head>
+    <body>
+      <title>Lesson 2 Exercises - CSS basics</title>
+    </head>
+    <section_1>
+      <div class ="all_in_one">
+        <h2>&nbsp;&nbsp;<p style="color:rgb(221, 219, 219)"><u>Lesson 2 Exercises - CSS Basics</u></p></h2>
+        <p style="color:rgb(129, 129, 129)">
+          (create new files like"2a.hmlt, 2b.html", etc. to try these exercises)
+        </p>
+        <p style="color: rgb(221, 219, 219)">
+          Use CSS to recreate these buttons from famous websites: 
+            <br>
+            <p_numbers style="color: white">
+              2a.Uber&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2b.Amazon
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2c.Github
+            </p_numbers>
+        </p>
+      &nbsp;&nbsp;
+      <!--This is the css
+        //where i style what i constructed from hmlt.
+          apparently, it is not doable to comment inside <style> element.
+      -->
+      <style>  
+        .body{
+          margin:auto
+        }
+        .second_body{
+          height: 30px;
+          width: 500px;
+          background-color: white;
+        }
+        .request_now{
+          font-size: xx-small;
+          height: 25px;
+          width: 65px;
+          margin-right: 1px;
+          border: solid white;
+          color: aliceblue;
+          background-color:rgb(0, 0, 0);
+          cursor: pointer;
+          transition:background-color 1s;
+        }
+        .request_now:hover{
+          background-color:rgb(61, 60, 60);
+          transition: background-color 0.5s;
+        }
+        .request_now:active{
+          transition: background-color 1s;
+            opacity: 0.7;
+        }
+        .Amazon{
+          font-size: xx-small;
+          height: 20px;
+          width: 65px;
+          border-radius: 18px;
+          border: none;
+          background-color:rgb(255, 216, 20);
+          margin-top: 4px;
+        }
+        .Amazon:hover{
+          background-color:rgba(206, 158, 55, 0.966);
+          transition: background-color 0.2s;
+          cursor:pointer;
+        } 
+        .Amazon:active{
+          background-color:rgba(180, 128, 16, 0.966); 
+          transition: background-color 0.3s;
+        } 
+        .Sign_up{
+          height: 20px;
+          width: 60px;
+          font-size: xx-small;
+          background-color:rgb(46, 164, 79);
+          color: white;
+          border-radius: 5px;
+          border: none;
+        }
+        .Sign_up:hover{
+          background-color: rgb(31, 104, 51);
+          transition: background-color 1s;
+          cursor: pointer;
+        }
+        .Sign_up:active{
+          background-color:rgb(21, 172, 61); 
+          transition: background-color 0.3s;
+        }
+        body{
+          background-color: black;
+        }
+        .third_body{
+          height: 35px;
+          width: 500px;
+          background-color: white;
+        }
+        .Get_started{
+          font-size: xx-small;
+          height: 25px;
+          width: 65px;
+          margin-top:4px;
+          background-color: rgb(121,82,179);
+          color: white;
+          border: none;
+          border-radius: 3px;
+          margin-left: 3px;
+          cursor: pointer;
+        }
+        .Get_started:hover{
+          background-color: white;
+          transition: background-color 0.5s;
+          color: rgb(121,82,179);
+        }
+        .Get_started:active{
+          transition: background-color 0.5s;
+          background-color: rgb(97, 66, 143);
+          transition: color 0.5s;
+          color: white;
+
+        }
+        .Download{
+          font-size: xx-small;
+          height: 25px;
+          width: 65px;
+          color: rgb(102,117,125);
+          margin-left: 3px;
+          cursor: pointer;
+        }
+        .Apply{
+          font-size: xx-small;
+          height: 25px;
+          width: 140px;
+          background-color: rgb(10,102,194);
+          color: white;
+          border: none;
+          border-radius: 20px;
+          cursor: pointer;
+        }
+        .Apply:hover{
+          transition: background-color 0.5s;
+          background-color: rgb(10, 51, 92);
+        }
+        .Apply:active{
+          transition: color 0.5s;
+          color: rgb(10, 51, 92);
+          transition: background-color 0.5s;
+          background-color: white;
+        }
+        .Save{
+          font-size: xx-small;
+          height: 25px;
+          width: 65px;
+          margin-left: 5px;
+          color:  rgb(10,102,194);
+          border-color: rgb(10,102,194);
+          border-width: 0.8px;
+          border-radius: 20px;
+          cursor: pointer;
+        }
+        .Save:hover{
+          transition: background-color 0.5s;
+          background-color:rgb(231, 231, 231);
+          color: rgb(87, 138, 180);
+        }
+        .amazon_font{
+          font-size: xx-small;
+          margin-left: 175px;
+        }
+        .Git_font{
+          font-size: xx-small;
+          margin-left: 340px;
+          margin-top: -20px;
+        }
+        .boots_font{
+          font-size: xx-small;
+          margin-left: -2px;
+          margin-top: 10px;
+        }
+        .boots_font_2{
+          font-size: xx-small;
+          margin-left: 105px;
+          margin-top: -20px;
+        }
+        .apply_font{
+          font-size: xx-small;
+          margin-left: 225px;
+          margin-top: -20px;
+        }
+
+      </style>
+      <!-- end of CSS-->
+      <div class="second_body">
+      <!--
+        <div>, this is a section inside my html.
+      -->
+        <button class="request_now " style="position:static; right: 5px;">
+        Request&nbsp;now
+        </button>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <button class="Amazon">
+          <strong>Add to Cart</strong>
+        </button>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <button class="Sign_up">
+          <strong>
+          Sign up
+        </strong>
+        </button>
+        <p class="amazon_font" style="color:rgb(255, 216, 20)">
+          <strong>
+          rgb(255, 216, 20)
+        &emsp;
+          <p class="Git_font" style="color:rgb(46,146,79)">
+            rgb(46, 164, 79)
+          </strong>
+          </p>
+      </div>
+      <p class ="numbers_2" style = "color:rgb(255, 255, 255)">
+        2d. Bootstrap
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        2e. Linkedin
+      </p>
+      <div class="third_body"> 
+      <!--
+        <div>, this is a section inside my html.
+      -->
+        <button class="Get_started">
+          <Strong>
+          Get started
+        </Strong>
+        </button>
+        <button class="Download">
+          <strong>
+          Download
+        </strong>
+        </button>
+        &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="Apply">
+          <strong>
+          Apply on company website
+        </strong>
+        </button>
+        <button class="Save">
+          <strong>
+          Save
+        </strong>
+        </button>
+        <p class="boots_font" style="color: rgb(121, 82, 179)">
+          <strong>
+        rgb(121, 82, 179)
+          <p class="boots_font_2" style="color: rgb(108, 117, 125)">
+            rgb(108, 117, 125)
+            &emsp;
+            <p class=" apply_font" style="color: rgb(10, 102, 194)">
+              rgb(10, 102, 194)
+          </strong>
+        </p>
+      </div>
+      </div>
+  </section_1>
+  </body>
+</html>
